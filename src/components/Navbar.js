@@ -26,7 +26,7 @@ const Navbar = () => {
 const styles = {
   nav: {
     backgroundColor: '#333',
-    padding: '10px',
+    padding: '30px',
   },
   ul: {
     listStyle: 'none',
