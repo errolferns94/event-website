@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <form>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -27,8 +27,11 @@ const LoginPage = () => {
             />
           </div>
           <button type="submit" className="login-button">
-            Login
+            Register
           </button>
+          <div>
+            <p>Don't have an account? <a href="/guest">Continue as guest</a></p>
+          </div>
         </form>
       </div>
     </div>
