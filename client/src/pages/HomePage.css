@@ -1,4 +1,9 @@
-.events-container {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles below */
+.home-container {
     position: relative;
     padding: 20px;
     text-align: center;
@@ -10,15 +15,15 @@
     justify-content: flex-start;
 }
 
-/* Events Banner Styling */
-.events-image {
+/* Event Banner Styling */
+.home-image {
     position: relative;
     width: 110%;
     max-width: 3000px;
     margin-top: -20px; /* Adjust based on navbar height */
 }
 
-.events-image img {
+.home-image img {
     width: 100%;
     max-height: 150px;
     object-fit: cover;
@@ -48,4 +53,16 @@
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar (Optional if not styled yet) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    z-index: 1000;
 }

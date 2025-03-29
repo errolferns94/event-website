@@ -1,4 +1,9 @@
-.guest-container {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles below */
+.events-container {
     position: relative;
     padding: 20px;
     text-align: center;
@@ -10,15 +15,15 @@
     justify-content: flex-start;
 }
 
-/* Guest Banner Styling */
-.guest-image {
+/* Events Banner Styling */
+.events-image {
     position: relative;
     width: 110%;
     max-width: 3000px;
     margin-top: -20px; /* Adjust based on navbar height */
 }
 
-.guest-image img {
+.events-image img {
     width: 100%;
     max-height: 150px;
     object-fit: cover;
