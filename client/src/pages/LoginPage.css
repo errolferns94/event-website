@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles below */
+
+/* src/pages/LoginPage.css */
+.login-container {
+    display: flex;
+    justify-content: flex-start; /* Align form to the left */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://uclaradio.com/wp-content/uploads/2024/10/092124_BOILER-ROOOM_LA_EDDIE-SOTO-PHOTOS-281-scaled.jpeg'); /* Add your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    padding-left: 50px; /* Add some padding to the left */
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for the form */
+  }
+  
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
