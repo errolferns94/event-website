@@ -5,7 +5,7 @@ This is a full-stack event management application built using Next.js and Supaba
 - Sign in using JWT Authentication (Supabase Auth)
 - Create, view, and manage events
 - Receive real-time event updates via WebSockets
-- Deploy easily on Vercel
+- Deploy easily on Netlify
 
 ## Features
 - **User Authentication**: Uses JWT-based authentication with Supabase.
@@ -16,7 +16,7 @@ This is a full-stack event management application built using Next.js and Supaba
 ## Tech Stack
 - **Frontend**: Next.js, React
 - **Backend**: Supabase (PostgreSQL, Auth, Realtime, WebSockets)
-- **Deployment**: Vercel
+- **Deployment**: Netlify
 
 ## Installation & Setup
 
@@ -43,7 +43,7 @@ NEXT_PUBLIC_SUPABASE_JWT_SECRET=your_supabase_jwt_secret
 ```sh
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+eventwebsitedemo.netlify.app
 
 ## API Endpoints
 - `GET /api/events`: Fetches all events
@@ -54,9 +54,8 @@ This app uses Supabase Realtime and WebSockets to update events live. Clients au
 
 ## Deployment
 1. Push your code to GitHub.
-2. Deploy using Vercel (`vercel deploy`).
-3. Add environment variables in Vercel settings.
-4. Your app is live! 🎉
+2. Deploy using Netlify.
+3. Your app is live! 🎉
 
 ## License
 This project is open-source under the MIT License.
