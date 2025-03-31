@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Event Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a full-stack event management application built using Next.js and Supabase. The app allows users to:
+- Sign in using JWT Authentication (Supabase Auth)
+- Create, view, and manage events
+- Receive real-time event updates via WebSockets
+- Deploy easily on Vercel
 
-## Available Scripts
+## Features
+- **User Authentication**: Uses JWT-based authentication with Supabase.
+- **Event CRUD**: Create, Read, Update, and Delete events.
+- **Real-time Updates**: Uses Supabase Realtime and WebSockets for live event updates.
+- **Responsive UI**: Built with Tailwind CSS for a modern design.
 
-In the project directory, you can run:
+## Tech Stack
+- **Frontend**: Next.js, React
+- **Backend**: Supabase (PostgreSQL, Auth, Realtime, WebSockets)
+- **Deployment**: Vercel
 
-### `npm start`
+## Installation & Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Clone the repository
+```sh
+git clone https://github.com/yourusername/event-management-app.git
+cd event-management-app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Install dependencies
+```sh
+npm install
+```
 
-### `npm test`
+### 3. Set up environment variables
+Create a `.env.local` file and add the following variables:
+```sh
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SUPABASE_JWT_SECRET=your_supabase_jwt_secret
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Run the development server
+```sh
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm run build`
+## API Endpoints
+- `GET /api/events`: Fetches all events
+- `POST /api/events`: Creates a new event
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## WebSocket Integration
+This app uses Supabase Realtime and WebSockets to update events live. Clients automatically receive event updates when changes occur in the database.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
+1. Push your code to GitHub.
+2. Deploy using Vercel (`vercel deploy`).
+3. Add environment variables in Vercel settings.
+4. Your app is live! 🎉
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is open-source under the MIT License.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
